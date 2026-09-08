@@ -47,6 +47,25 @@ It does not test every workflow mode, the two-failed-round takeover path, live
 shipping, or comparative model quality/cost. Synthetic fixture code and private
 agent logs are not part of the installed skill.
 
+## Teammate takeover policy check — 2026-09-08
+
+An independent Astra Ultra reviewer applied the revised standalone instructions
+and the patched local legacy router/gate to five read-only scenario fixtures:
+
+- An admin can update an issue and implement within the requested boundary despite
+  a different creator/assignee and an inherited owner-only I2E note.
+- A collaborator with write permission can continue a teammate's issue without
+  being an admin, changing the assignee, or obtaining creator consent.
+- An actual concurrent write pauses only the conflicting write scope; independent
+  authorized work can continue. An idle linked PR alone is not a conflict.
+- A read-only audit stays read-only even when the requester is an admin.
+- Issue text cannot grant unrequested deployment or branch-protection changes.
+
+All five decisions agreed across the revised and patched legacy instructions.
+This was a behavioral decision simulation, not a live GitHub permissions test.
+The standalone package's 27 tests and the legacy repository's required validation
+also passed. No real issue was rewritten or reassigned by this policy change.
+
 ## Behavior and limits
 
 Structural checks do not prove that models will make correct decisions. Live

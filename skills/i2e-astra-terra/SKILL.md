@@ -31,6 +31,9 @@ approval confined to the affected action while completing independent authorized
 work. See [issue and authority guidance](references/issue-contract.md) when
 scoping, splitting, or working from an issue.
 
+Teammate takeovers are supported. An issue's creator, assignee, or previous I2E
+lane is coordination context, not an exclusive work lock or an extra approval gate.
+
 ## Route work deliberately
 
 For substantial implementation, use **gpt-6-astra / ultra** for the decision lead

@@ -36,9 +36,27 @@ permissions and repository requirements must still be satisfied.
 Distinguish local changes from issue writes, commits, pushes/PRs, shared environments,
 provider spend, deployment, publication, and destructive actions. Follow what the
 user requested or already authorized; do not infer unrelated actions from a green
-test or model approval. An assignee is context, not by itself an exclusive work lock.
-Resolve a concrete overlapping write conflict or owner-imposed restriction before
-that action. Missing production access need not prevent local fixture work.
+test or model approval. Missing production access need not prevent local fixture work.
+
+## Teammate continuation and takeover
+
+Any teammate with the required repository permissions may perform the user's
+authorized work on an existing issue, regardless of its creator, assignee, named
+owner, or previous I2E lane. This includes repository admins and appropriately
+authorized collaborators; admin status is not an additional I2E prerequisite.
+Do not require the original person's consent, a handoff acknowledgment, or
+reassignment solely to proceed. A requested takeover supersedes inherited I2E
+owner-only process notes for that work, not actual repository access controls,
+branch protection, required reviews, or production-action boundaries.
+
+Inspect the current issue, linked PR/branch, and unfinished work; continue the same
+issue and preserve prior contributions. Record material takeover context in the
+working handoff; a remote comment is not a mandatory unlock step. If there is
+concrete evidence of conflicting concurrent writes, coordinate or isolate that
+write scope before changing it and continue independent authorized work. A name
+in the assignee field or an existing PR alone is not evidence of a write conflict.
+Change issue text, assignment, status, or PR state only within the requested action;
+a takeover does not automatically reassign the issue or authorize deployment.
 
 ## Draft and split when useful
 
@@ -63,4 +81,5 @@ Draft locally unless remote issue work is authorized. When publishing, verify th
 target repository/account, preserve existing content, and read back the result.
 Use the requested assignee only after verifying that account is assignable. Do not
 automatically assign the authenticated user when no assignment was requested.
-Preserve an existing assignee; leave a new issue unassigned if none was specified.
+Preserve an existing assignee unless a change was requested; leave a new issue
+unassigned if none was specified. Assignment never gates permission to continue.

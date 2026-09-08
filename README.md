@@ -68,6 +68,16 @@ Repository-specific rules and native checks still apply. Specialized tools and
 skills can be used when available and relevant; none of the former I2E workflow
 skills are dependencies of this package.
 
+### Working on a teammate's issue
+
+Issue creators and assignees do not hold an exclusive I2E work lock. A teammate
+with the required repository permissions can take over authorized work on the
+same issue without the original person's approval or prior reassignment. This also
+applies to older issues containing owner-only I2E process notes. Inspect current
+progress and coordinate actual conflicting writes; preserve repository protections,
+required reviews, and the user's action boundary. Taking over does not automatically
+change the assignee, rewrite old issues, or authorize deployment.
+
 ## Update or inspect
 
 ```sh
