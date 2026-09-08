@@ -1,0 +1,4 @@
+interface:
+  display_name: "I2E Astra Terra"
+  short_description: "Astra Ultra leads; Terra xhigh implements"
+  default_prompt: "Use $i2e-astra-terra for this repo: implement the requested outcome, verify it, and complete the authorized handoff."

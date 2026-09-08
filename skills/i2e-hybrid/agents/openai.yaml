@@ -1,0 +1,4 @@
+interface:
+  display_name: "I2E Hybrid (Astra Terra)"
+  short_description: "Use the repaired Astra Ultra / Terra xhigh workflow"
+  default_prompt: "Use $i2e-hybrid for this repo and complete the requested outcome with Astra Ultra and Terra xhigh."
