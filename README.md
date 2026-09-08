@@ -1,28 +1,34 @@
 # I2E Astra Terra
 
-A self-contained Codex Issue-to-Edit workflow for the team: **Astra Ultra** owns
+A self-contained Codex Issue-to-Edit workflow: **Astra Ultra** owns
 decisions and review; **Terra xhigh** performs bounded implementation.
 
-This private repository includes the complete workflow, supporting references,
+Built on engineering workflow practices from
+[Addy Osmani's agent-skills](https://github.com/addyosmani/agent-skills).
+Credit to Addy Osmani for the foundational engineering skillset; this repository
+consolidates and adapts those practices into a standalone Issue-to-Edit workflow
+with Astra/Terra routing. It is an independent adaptation, not an official upstream
+release or endorsement.
+
+This public repository includes the complete workflow, supporting references,
 run-record template, installer, and tests. It does **not** require cloning the old
 `issue-to-edit-workflow-skills` repository or installing its skill stack.
 
 ## Install
 
-You need access to this private repository, Git, Python 3.10+, and Codex with
+You need Git, Python 3.10+, and Codex with
 subagent support and access to `gpt-6-astra` / `ultra` and `gpt-5.6-terra` / `xhigh`.
 Model access and project-specific tools or credentials are not supplied by a skill.
 
 ```sh
-gh repo clone bowang-solutionstream/i2e-astra-terra
+git clone https://github.com/bowang-solutionstream/i2e-astra-terra.git
 cd i2e-astra-terra
 python3 scripts/install.py
 python3 scripts/install.py --check
 ```
 
-Alternatively, clone `https://github.com/bowang-solutionstream/i2e-astra-terra.git`
-using your usual authenticated Git setup. The repository owner must grant teammates
-access before they can clone it; installation does not send invitations.
+The repository can be cloned without a GitHub invitation or authenticated account.
+If you prefer GitHub CLI, use `gh repo clone bowang-solutionstream/i2e-astra-terra`.
 
 The installer copies the complete skill to `$CODEX_HOME/skills`, or
 `~/.codex/skills` when `CODEX_HOME` is unset. It has no third-party Python dependency,
@@ -118,8 +124,19 @@ same checks. Copy it to `.github/workflows/validate.yml` when enabling CI with a
 account/token authorized to edit workflow files. CI is not enabled by this package's
 initial publication; the install and local checks do not require it.
 
+## Credits and license notices
+
+- [Addy Osmani's agent-skills](https://github.com/addyosmani/agent-skills) provides
+  the foundational engineering practices adapted here, including planning,
+  incremental implementation, testing, source-driven development, and review.
+  The original [MIT license and copyright notice](skills/i2e-astra-terra/notices/ADDY_AGENT_SKILLS_LICENSE)
+  are retained with the installed skill.
+- [Pattern, Inc.'s code-mint](https://github.com/patterninc/code-mint) contributed
+  the issue-refinement guidance adapted from `interface-ticket-writer`.
+  Its [Apache 2.0 license](skills/i2e-astra-terra/notices/CODE_MINT_LICENSE) is retained.
+
 See [the main skill](skills/i2e-astra-terra/SKILL.md) for workflow instructions and
-[provenance and upstream notices](skills/i2e-astra-terra/NOTICE.md) for attribution.
-This repository is distributed privately for team use; no new public open-source
-license is granted for the locally authored package. Upstream material retains its
-own license terms.
+[provenance and upstream notices](skills/i2e-astra-terra/NOTICE.md) for the source
+revisions and adaptation details. No repository-wide license is declared for the
+original orchestration and tooling; this visibility change does not relicense them.
+Upstream material retains its respective license terms.

@@ -1,5 +1,16 @@
 # Provenance and upstream notices
 
+## Primary upstream credit: Addy Osmani
+
+Credit to Addy Osmani's [agent-skills](https://github.com/addyosmani/agent-skills)
+for the foundational engineering skillset behind this workflow's adapted planning,
+incremental implementation, testing, source-driven development, and review guidance.
+This package consolidates those practices with the locally authored Issue-to-Edit
+orchestration and Astra/Terra routing. It is an independent adaptation, not an
+official release of the upstream skillset or a claim of upstream endorsement.
+
+## Package provenance and retained licenses
+
 This standalone package was assembled on 2026-09-08 from the locally authored
 Issue-to-Edit workflow and hybrid-routing requirements. The prior package was
 `h3ro-dev/issue-to-edit-workflow-skills`. That repository is provenance, not an

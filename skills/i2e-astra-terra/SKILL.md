@@ -10,6 +10,11 @@ package contains the workflow, issue, engineering, verification, and handoff
 guidance; no other workflow skill or issue-to-edit repository is required.
 Repository-specific instructions and acceptance requirements still apply.
 
+The engineering workflow foundations credit
+[Addy Osmani's agent-skills](https://github.com/addyosmani/agent-skills), adapted
+here for standalone I2E orchestration. See [credits and license notices](NOTICE.md)
+for the retained upstream attribution; no upstream installation is required.
+
 ## Start with the requested outcome
 
 Classify the request as learning, issue scoping, implementation, review, or shipping.
